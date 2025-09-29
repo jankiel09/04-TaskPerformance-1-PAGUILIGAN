@@ -15,14 +15,11 @@ namespace _04TaskPerf1
             {
                 Thread thread = Thread.CurrentThread;
                 string output = $"Name of Thread: {thread.Name} Process = {loopCount}";
-
                 Console.WriteLine(output);
                 Debug.WriteLine(output);
-
-           
                 Thread.Sleep(500);
             }
-        }
+        }//end of thread1
         public static void Thread2()
         {
             for (int loopCount = 0; loopCount < 6; loopCount++)
@@ -32,9 +29,8 @@ namespace _04TaskPerf1
 
                 Console.WriteLine(output);
                 Debug.WriteLine(output);
-           
                 Thread.Sleep(1500);
-            }//end of thread
-        }
-    }
-    }
+            }
+        }//end of thread2
+    }//threadclass
+ }//namespace

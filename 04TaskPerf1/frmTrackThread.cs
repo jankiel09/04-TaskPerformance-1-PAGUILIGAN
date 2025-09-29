@@ -22,9 +22,7 @@ namespace _04TaskPerf1
             ThreadB.Priority = ThreadPriority.Normal;
             ThreadC.Priority = ThreadPriority.AboveNormal;
             ThreadD.Priority = ThreadPriority.BelowNormal;
-
         }
-        // 
         private void threadA() { }
         private void threadB() { }
         private void threadC() { }
@@ -43,7 +41,6 @@ namespace _04TaskPerf1
             ThreadStart threadStart2 = new ThreadStart(MyThreadClass.Thread2);
             ThreadStart threadStart3 = new ThreadStart(MyThreadClass.Thread1);
             ThreadStart threadStart4 = new ThreadStart(MyThreadClass.Thread2);
-
 
             // create 4 threads named ThreadA and ThreadB
             ThreadA = new Thread(threadStart1);
